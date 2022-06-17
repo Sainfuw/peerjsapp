@@ -53,7 +53,11 @@ function App() {
       />
       <button onClick={() => call(remotePeerIdValue)}>Call</button>
       <div>
-        <video ref={remoteVideoRef} controls />
+        <video
+          style={{ width: 640, height: 360 }}
+          ref={remoteVideoRef}
+          controls
+        />
       </div>
     </div>
   )
